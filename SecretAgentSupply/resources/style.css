@@ -79,6 +79,7 @@ background-repeat: no-repeat;
 @media only screen and (max-width: 470px) {
   .main-banner {
     height: 15rem;
+    background-size: cover;
   }
 }
 
@@ -95,6 +96,7 @@ background-repeat: no-repeat;
 @media only screen and (max-width: 470px) {
   .banner {
     padding-top: 10rem;
+
 
 }
 }
@@ -123,7 +125,7 @@ h4 {
   .banner h4 {
     padding-top: 1rem;
     font-weight: bold;
-    font-family: Helvetica;
+    font-family: Helvetica sans-serif;
     font-size: 0.77rem;
   }
 }
@@ -244,8 +246,15 @@ img {
 }
 
 @media only screen and (max-width: 470px) {
-  .product-image {
+  .product {
     width: 90%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .description {
+    width: auto;
+
   }
 }
 
@@ -285,8 +294,8 @@ img {
 }
 
 @media screen and (max-width: 470px) {
-  .box {
-    margin-top: 0.5rem;
+  .info {
+    padding: 0.5rem;
     width: 90%
   }
 }
