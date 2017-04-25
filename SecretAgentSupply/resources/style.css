@@ -7,11 +7,38 @@ body {
   color: white;
   font-family: Helvetica, sans-serif;
 }
+
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .company span {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .company .container img {
+    align-items: center;
+    display: flex;
+  }
+}
+
 /* Company Header */
 .company {
   background-color: black;
   color: white;
-
+  display: flex;
+  align-items: flex-end;
 }
 
 .container {
@@ -19,9 +46,11 @@ body {
   margin: 0 auto;
 }
 
+
 .company .container {
   display: flex;
   align-items: center;
+  padding: 12px 0 12px 0;
 }
 
 .company img {
@@ -46,6 +75,14 @@ height: 25rem;
 background-repeat: no-repeat;
 }
 
+
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    height: 15rem;
+  }
+}
+
+
 .headline {
   background-color: black;
   color: white;
@@ -53,6 +90,13 @@ background-repeat: no-repeat;
   padding: 2em 3em;
   position: relative;
   top: 9rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .banner {
+    padding-top: 10rem;
+
+}
 }
 
 h1 h4 {
@@ -68,6 +112,32 @@ h4 {
   font-size: 2rem;
 }
 
+@media only screen and (max-width: 470px) {
+  .headline{
+    display: block;
+    padding-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .banner h4 {
+    padding-top: 1rem;
+    font-weight: bold;
+    font-family: Helvetica;
+    font-size: 0.77rem;
+  }
+}
+
+
+@media only screen and (max-width: 470px) {
+  .banner  h1 {
+    padding-left: 2rem;
+    font-weight: bold;
+    font-family: Helvetica;
+    font-size: 1rem;
+  }
+}
+
 /* Nav Banner Section */
 
 nav {
@@ -80,7 +150,42 @@ nav ul {
   flex-direction: row;
   justify-content: space-between;
   padding: 0.75rem 0;
+  list-style: none;
 }
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  nav ul {
+    display: flex;
+    flex-grow: 2;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .mobile-nav {
+    display: block;
+    text-align: center;
+    }
+
+/* Product & Business Info Section */
+
+/* Product Section */
 
 .products, .business-info {
   display: flex;
@@ -90,6 +195,24 @@ nav ul {
 
 .product {
   width: 30%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .product {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .product {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  span {
+    width: 90%;
+  }
 }
 
 .product-image img {
@@ -107,6 +230,25 @@ img {
   justify-content: center;
   display: flex;
 }
+
+@media only screen and (max-width: 1024px) {
+  .product.glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .product.glasses, .product.watch {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .product-image {
+    width: 90%;
+  }
+}
+
 
 .description {
   display: block;
@@ -133,14 +275,36 @@ img {
   font-family: Helvetica, sans-serif;
 }
 
+@media screen and (max-width: 470px) {
+  .business-info {
+    width: 90%;
+    display: block;
+    margin: auto 0;
+    padding-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .box {
+    margin-top: 0.5rem;
+    width: 90%
+  }
+}
+
+
 /* Footer */
 
 footer {
   display: block;
   margin-top: 4rem;
   background-color: black;
-  margin: 0 auto;
   color: white;
-  height: 5rem;
-  align-content: center;
+  padding: 5rem 0;
+}
+
+@media screen and (max-width: 470px) {
+  footer {
+    display: flex;
+    align-items: center;
+  }
 }
